@@ -13,14 +13,11 @@ describe('ArraysService', () => {
   });
 
   it('should be rotated according to k number of rotations', () => {
-    let params = {
+    const params = {
       inputArr: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-      k: 11
-    }
+      k: 11,
+    };
     const result = service.left_rotation(params);
-    expect(result).toEqual([
-      2, 3, 4,  5, 6,
-      7, 8, 9, 10, 1
-    ]);
+    expect(result).toEqual([2, 3, 4, 5, 6, 7, 8, 9, 10, 1]);
   });
 });
